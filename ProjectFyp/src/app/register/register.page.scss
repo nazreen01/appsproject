@@ -1,0 +1,26 @@
+.form {
+margin-top: -2px;
+	ion-item {
+	border-radius: 5px;
+	border-color: rgb(201, 201, 201);
+	border-width: 2px;
+	border-style: solid;
+	margin-bottom: 10px;
+	}
+}
+
+background {
+	background: url(/assets/.jpeg);
+	background-repeat: no-repeat;
+	bakground-size: contain;
+	background-position: center;
+	width: 80%;
+	height: 246px;
+	margin: auto;
+	z-index: 2;
+	position: relative;
+}
+
+ion-button {
+	text-tansform: none;
+}

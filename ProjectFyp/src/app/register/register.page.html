@@ -1,0 +1,32 @@
+<ion-header>
+	<ion-toolbar color="danger">
+		<ion-title>REGISTER</ion-title>
+		<ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+	</ion-toolbar>
+</ion-header>
+
+	<ion-content class="ion-padding ion-text-center">
+	
+	<div class="form">
+
+	<ion-item lines='none'>
+		<ion-input [(ngModel)]="post.email" placeholder="Email"></ion-input>
+	</ion-item>
+
+	<ion-item lines='none'>
+		<ion-input [(ngModel)]="post.name" placeholder="Name"></ion-input>
+	</ion-item>
+
+	<ion-item lines='none'>
+		<ion-input [(ngModel)]="post.password" placeholder="Password" type="password"></ion-input>
+	</ion-item>
+
+	<ion-button color="dark" expand="block" (click)="createPost(post)">SUBMIT</ion-button>
+
+</div>
+
+<ion-button fill="clear" routerLink="/login">Login Here.</ion-button>
+
+</ion-content>

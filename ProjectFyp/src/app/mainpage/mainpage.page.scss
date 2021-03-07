@@ -1,0 +1,37 @@
+* 
+{
+  font-weight: 300;
+}
+
+
+ion-text {
+  position: absolute;
+  top: 45%;
+
+  p {
+  font-size: 18px;
+  color: #696969;
+  }
+}
+
+.actions {
+  position: absolute;
+  width: 90%;
+  bottom: 80px;
+}
+
+// style for all buttons
+
+ion-button {
+  --border-radius: 10px;
+  --box-shadow: none;
+  text-transform: initial;
+  font-size: 15px
+}
+
+.separator {
+  display: flex;
+  justify-content: center;
+  margin: 8px auto 10px;
+  font-size: 15px;
+}

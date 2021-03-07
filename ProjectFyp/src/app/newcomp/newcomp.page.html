@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title color="dark"><b>&nbsp;Add New Complaint</b></ion-title>
+    <ion-buttons slot="start">
+			<ion-menu-button menu="main-menu"></ion-menu-button>
+		</ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+	<div id="container">
+		<ion-card color="medium">
+			<img src="./assets/2.jpg" />
+
+			<ion-card-header>
+			<ion-item>
+				<ion-label position="floating">Complaint Title</ion-label>
+				<ion-input type="text" [(ngModel)]="post.title" required></ion-input>
+			</ion-item>
+
+			<ion-item>
+				<ion-label>Location</ion-label>
+				<ion-select value="General" interface="action-sheet" class="custom-options" [(ngModel)]="post.location">
+					<ion-select-option value="General">General</ion-select-option>
+					<ion-select-option value="Counseling & Alumni Division">Counseling & Alumni Division</ion-select-option>
+					<ion-select-option value="Human Resource Division">Human Resource Division</ion-select-option>
+					<ion-select-option value="Student Acoount Division">Student Account Division</ion-select-option>
+					<ion-select-option value="Sponsorship Division">Sponsorship Division</ion-select-option>
+					<ion-select-option value="Library">Library</ion-select-option>
+					<ion-select-option value="Cafe">Cafe</ion-select-option>
+					<ion-select-option value="Men's Prayer">Men's Prayer</ion-select-option>
+					<ion-select-option value="Women's Prayer">Women's Prayer</ion-select-option>
+					<ion-select-option value="Admission & Student Record Division">Admission & Student Record Division</ion-select-option>
+					<ion-select-option value="Computer Lab">Computer Lab</ion-select-option>
+					<ion-select-option value="Student Square">Student Square</ion-select-option>
+				</ion-select>
+			</ion-item>
+
+			<ion-item>
+				<ion-label>Level</ion-label>
+				<ion-select value="Ground Floor" [(ngModel)]="post.level">
+					<ion-select-option value="Ground Floor">Ground Floor</ion-select-option>
+            		<ion-select-option value="1">1</ion-select-option>
+            		<ion-select-option value="2">2</ion-select-option>
+            		<ion-select-option value="3">3</ion-select-option>
+            		<ion-select-option value="4">4</ion-select-option>
+            		<ion-select-option value="5">5</ion-select-option>
+        		</ion-select>
+    		</ion-item>
+
+			<ion-item>
+				<ion-label position="floating">Complaint Information</ion-label>
+				<ion-textarea maxlength="100" [(ngModel)]="post.details"></ion-textarea>
+			</ion-item>
+
+			</ion-card-header>
+		</ion-card>
+
+		<div id="container">
+
+			<ion-button color="dark" fill="outline" [routerLink]="['/addphoto']">Next</ion-button>
+
+			<ion-button color="dark" fill="outline" (click)="createPost(post)">Add</ion-button>
+
+		</div>
+
+	</div>
+</ion-content>
+ 

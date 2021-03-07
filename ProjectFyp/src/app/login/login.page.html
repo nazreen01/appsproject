@@ -1,0 +1,31 @@
+<ion-header>
+	<ion-toolbar color="danger">
+		<ion-title>LOGIN</ion-title>
+		<ion-buttons slot="start">
+      <ion-back-button defaultHref="mainpage"></ion-back-button>
+    </ion-buttons>
+	</ion-toolbar>
+</ion-header>
+
+	<ion-content class="ion-padding ion-text-center">
+	
+	<div class="logo">
+		<img src="assets/kuptm.png">
+	</div>
+
+	<div class="form">
+
+	<ion-item lines='none'>
+		<ion-input type="email" [(ngModel)]="user.email" placeholder="Email" required></ion-input>
+	</ion-item>
+
+	<ion-item lines='none'>
+		<ion-input [(ngModel)]="user.password" placeholder="Password" type="password" required></ion-input>
+	</ion-item>
+
+	<ion-button color="dark" expand="block" (click)="login(user)">LOGIN</ion-button>
+</div>
+
+<ion-button fill='clear' routerLink="/register">New? Signup Here.</ion-button>
+
+</ion-content>
